@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24+Charted&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan+SC&display=swap');
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #cccccc;
+}
+h1 {
+    margin: 30px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+.faq-container{
+    max-width: 600px;
+    margin: 25px;
+    right: 50px;
+    transform: translate(59%);
+  }
+  .faq {
+    background-color: rgb(235, 230, 230);
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 25px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s ease;
+  }
+  .faq.active {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  .faq-title {
+    margin: 0 35px 0 0;
+  }
+  
+  .faq-text {
+    display: none;
+    margin: 30px 0 0;
+  }
+  .faq.active .faq-text {
+    display: block;
+  }
+  .faq-toggle {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+    
+  }
+  .faq-toggle:hover{
+    background-color: thistle;
+  }
+
+  .faq-toggle .bx-chevron-up{
+    display: none;
+  }
+  .faq.active .faq-toggle .bx-chevron-up {
+    display: block;
+  }
+  .faq.active .faq-toggle .bx-chevron-down {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .faq-container {
+      max-width: 90%;
+      margin: 25px auto;
+      right: 0;
+      transform: none;
+    }
+    .faq {
+      margin: 10px auto;
+    }
+  }
+  
